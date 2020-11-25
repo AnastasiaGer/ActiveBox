@@ -1,7 +1,7 @@
 body {
   /* font-family: 'Cardo', serif;
       font-family: 'Open Sans', sans-serif; */
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #6c7279;
   background-color: #fff;
@@ -30,8 +30,9 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* header */
@@ -67,7 +68,7 @@ p {
 .nav__link {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
-  transition: color .2s linear;
+  transition: color 0.2s linear;
   margin-left: 50px;
 }
 
@@ -84,7 +85,7 @@ p {
 .intro {
   height: 750px;
   background-color: #2a2e48;
-  background-image: url('images/bg.jpg');
+  background-image: url("images/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,7 +104,7 @@ p {
 }
 
 .intro__title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 65px;
   font-weight: 700;
   color: #ffffff;
@@ -147,7 +148,7 @@ p {
 
   border: 0;
 
-  transition: background .2s linear;
+  transition: background 0.2s linear;
 }
 
 .button:hover {
@@ -230,7 +231,7 @@ p {
   justify-content: center;
 
   opacity: 0;
-  transition: opacity .2s linear;
+  transition: opacity 0.2s linear;
 }
 
 .works__title {
@@ -251,4 +252,142 @@ p {
 
 .works__item:hover .works__content {
   opacity: 1;
+}
+
+/* team */
+
+.team {
+  margin: 100px 0 70px;
+}
+
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.team__item {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.team__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.team__name {
+  color: #2d3033;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.team__position {
+  color: #e84545;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.team__text {
+  color: #6c7279;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* social */
+.social {
+  display: flex;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8ecee;
+  background-color: #ffffff;
+  margin-right: 4px;
+  position: relative;
+}
+
+.social__item:hover {
+  background-color: #e8ecee;
+}
+
+.social__icon {
+  fill: #c6cacc;
+  display: block;
+  height: 38px;
+}
+
+.social__item:hover .social__icon {
+  fill: #000;
+}
+
+/* reviews */
+
+.reviews {
+  overflow: hidden;
+  background-color: #53354a;
+  margin-bottom: 100px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__photo {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+
+.reviews__img{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 80px;
+}
+
+
+.reviews__text {
+  color: #ffffff;
+  font-family: 'Cardo', serif;
+  font-size: 36px;
+  font-style: italic;
+
+  line-height: 42px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+
+.reviews__name {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
 }
