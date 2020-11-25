@@ -354,7 +354,7 @@ p {
   position: relative;
 }
 
-.reviews__img{
+.reviews__img {
   position: absolute;
   top: 50%;
   right: 0;
@@ -390,4 +390,130 @@ p {
   line-height: 21px;
   text-align: left;
   text-transform: uppercase;
+}
+
+/* download */
+
+.download {
+  margin: 90px 0;
+  text-align: center;
+}
+
+.download__title {
+  color: #2d3033;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.download__text {
+  color: #2d3033;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.button-download {
+  min-width: 280px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #3a3e64;
+}
+
+.footer__inner {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__block {
+  width: 33.333%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.footer__title {
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.footer__address {
+  color: rgba(255, 255, 255, .5);
+
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+
+  line-height: 22.5px;
+}
+
+.social--footer {
+  justify-content: center;
+}
+
+.social__item--footer {
+  background-color: #3a3e64;
+  border: 2px solid #ffffff;
+}
+
+.social__icon--footer {
+  fill: #fff;
+}
+
+.social__item--footer:hover .social__icon--footer {
+  fill: #3a3e64;
+}
+
+.footer__text {
+  color: rgba(255, 255, 255, .5);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22.5px;
+  text-align: center;
+}
+
+.footer__copyright {
+  background-color: #313454;
+  padding: 20px 0;
+}
+
+.copyright__text {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 22.5px;
+  text-align: center;
+}
+
+.copyright__text span{
+  color: #ffffff;
+  position: relative;
+  padding-left: 25px;
+}
+
+.copyright__text span:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url('images/icons/heart.svg');
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 5px;
+  z-index: 1;
 }
